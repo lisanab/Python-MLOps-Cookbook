@@ -1,8 +1,15 @@
-[![Python application test with Github Actions](https://github.com/noahgift/Python-MLOps-Cookbook/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/noahgift/Python-MLOps-Cookbook/actions/workflows/pythonapp.yml)
-[![Python application test with AWS Code Builde](https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiSjN4ZXRiNllSOVlYWmZqQ2tyS05OOC8wUElNZ05uUFZkVDdKSHVrNzU2L2FzajJXUmlKUngxUkFvOGFTaStMNW9rOUJSS0VTWFRadVpHdWgyN1BLMjA4PSIsIml2UGFyYW1ldGVyU3BlYyI6IjB0anA4VWxkNFBvejJIcE0iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
-
 # Python MLOps Cookbook 
 This is an example of a Containerized Flask Application the can be the core ingredient in many "recipes", i.e. deploy targets..
+
+### Steps to run for this project:
+
+   - Create a Github Repo (if not created)
+   - Open AWS Cloud Shell
+   - Create ssh-keys in AWS Cloud Shell
+   - Upload ssh-keys to Github
+   - Create scaffolding for project (if not created)
+   -   Makefile, requirements.txt etc.
+
 
 ![mlops-color](https://user-images.githubusercontent.com/58792/121539559-c6787e80-c9d3-11eb-9f48-5d25924fad25.png)
 * [Read Practical MLOps Online](https://learning.oreilly.com/library/view/practical-mlops/9781098103002/)
@@ -154,39 +161,6 @@ With the project using DevOps/MLOps best practices including linting, testing, a
 
 ### AWS
 
-#### Elastic Beanstalk
-
-#### AWS Lambda Recipes
-
-Install [SAM as documented here](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html), AWS Cloud9 has it installed already.
-
-You can [find the recipes here](https://github.com/noahgift/Python-MLOps-Cookbook/tree/main/recipes/aws-lambda-sam)
-
-
-##### AWS Lambda-SAM Local
-
-![sam-directory-layout](https://user-images.githubusercontent.com/58792/111075610-32277a00-84bf-11eb-9f61-41adc9f97a21.png)
-
-##### AWS Lambda-SAM Containerized Deploy
-
-Follow recipe in recipe section.
-
-![sam-guided-deploy](https://user-images.githubusercontent.com/58792/111085621-7d0cb600-84ee-11eb-8405-e94ceb5d737e.png)
-
-When deployed an easy way to verify image is via Console.
-
-![invoke-lambda-console](https://user-images.githubusercontent.com/58792/111085839-92361480-84ef-11eb-8cdb-092dbd94e2d1.png)
-
-A great way to test the API Endpoint is with the Cloud9 Environment:
-
-![invoke-api-gateway](https://user-images.githubusercontent.com/58792/111086910-2b1b5e80-84f5-11eb-901e-807032b7427a.png)
-
-Another way is the the tool "Postman":
-
-![post-man](https://user-images.githubusercontent.com/58792/111086967-746bae00-84f5-11eb-9ca1-6315d3cfa5ed.png)
-
-
-
 #### AWS App Runner
 
 Watch a YouTube Walkthrough on AWS App Runner for this repo here:  https://www.youtube.com/watch?v=zzNnxDTWtXA
@@ -196,55 +170,4 @@ Watch a YouTube Walkthrough on AWS App Runner for this repo here:  https://www.y
 #### AWS Co-Pilot
 
 
-Following setup here and then deploy project using cli
-https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-aws-copilot-cli.html
-
-### GCP
-
-#### Cloudrun (CaaS:  Container as a Service)
-
-It is trivial (if you select project):
-
-`gcloud config set project <yourprojectname>`
-
-A.  Get GCP Account
-B.  Checkout project
-C.  `cloud run deploy` inside of project
-D.  Verify it works by using `./utilscli.py`
-
-![gcp-cloud-run](https://user-images.githubusercontent.com/58792/138346831-6d203164-e224-429f-8fb3-0d7314954697.png)
-
-
-
-#### App Engine
-
-#### GKE (Kubernetes)
-
-### Azure App Services
-
-
-## Production Patterns
-
-[In progress....]
-
-* Cached model (deploy)
-* Load-testing
-
-
-## DataScience Workflow
-
-![mlb-ht-wt](https://user-images.githubusercontent.com/58792/110829008-a7980e00-8265-11eb-883d-4a87fe6f0a84.png)
-
-This repository is focused on MLOps.  To see more about Data Storytelling, you can go to this [Github repo on Data Story Telling](https://github.com/noahgift/data-story-telling)
-
-
-#### Next Steps:  Take Coursera MLOps Course
-
-![cloud-specialization](https://user-images.githubusercontent.com/58792/121041040-650ca180-c780-11eb-956e-8d1ecb134641.png)
-
-* [Take the Specialization](https://www.coursera.org/learn/cloud-computing-foundations-duke?specialization=building-cloud-computing-solutions-at-scale)
-* [Cloud Computing Foundations](https://www.coursera.org/learn/cloud-computing-foundations-duke?specialization=building-cloud-computing-solutions-at-scale)
-* [Cloud Virtualization, Containers and APIs](https://www.coursera.org/learn/cloud-virtualization-containers-api-duke?specialization=building-cloud-computing-solutions-at-scale)
-* [Cloud Data Engineering](https://www.coursera.org/learn/cloud-data-engineering-duke?specialization=building-cloud-computing-solutions-at-scale)
-* [Cloud Machine Learning Engineering and MLOps](https://www.coursera.org/learn/cloud-machine-learning-engineering-mlops-duke?specialization=building-cloud-computing-solutions-at-scale)
 
