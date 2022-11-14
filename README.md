@@ -1,3 +1,5 @@
+[![MLOPs Python Cookbook with Github Actions](https://github.com/lisanaberberi/Python-MLOps-Cookbook/actions/workflows/main.yml/badge.svg)](https://github.com/lisanaberberi/Python-MLOps-Cookbook/actions/workflows/main.yml)
+
 # Python MLOps Cookbook 
 This is an example of a Containerized Flask Application the can be the core ingredient in many "recipes", i.e. deploy targets..
 
