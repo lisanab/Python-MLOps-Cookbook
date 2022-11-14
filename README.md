@@ -40,6 +40,11 @@ Feel free to test my ML project:  `docker pull ghcr.io/noahgift/python-mlops-coo
 There are two cli tools.  First, the main `cli.py` is the endpoint that serves out predictions.
 To predict the height of an MLB player you use the following: ` ./cli.py --weight 180`
 
+-Another example of predict function results is:
+
+$ ./cli.py --weight 340
+Output: 6 foot, 10 inches
+
 ![predict-height-weight](https://user-images.githubusercontent.com/58792/110970118-6c5e1380-8327-11eb-95b2-aeba679c0270.png)
 
 The second cli tool is `utilscli.py` and this perform model retraining, and could serve as the entry point to do more things.
